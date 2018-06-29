@@ -127,7 +127,6 @@ class ErrorHandler(object):
                         value = value['value']
                     status = value.get('error', None)
                     if status is None:
-                        status = value["status"]
                         message = value["value"]
                         if not isinstance(message, basestring):
                             value = message
